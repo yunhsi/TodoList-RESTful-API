@@ -87,4 +87,4 @@ const reqListener = (req, res) => {
 };
 
 const server = http.createServer(reqListener); // 進入網頁時觸發
-server.listen(3005);
+server.listen(process.env.PORT || 3005);
